@@ -4,7 +4,7 @@ A new Flutter application for cache image to the local storage
 
 ## Getting Started
 
-Flutter already have the memory  cache, So  can do it  modify the networkImage
+Flutter already have the memory  cache, So  can do it   modify the networkImage
 
 how to use it
 ```python
