@@ -6,6 +6,10 @@ A new Flutter application for cache image to the local storage
 
 Flutter already have the memory  cache, So  can do it   modify the networkImage
 
+The code is in fade_in_cache.dart
+
+Copy the FadeInImage  and  NetworkImage, then  add the file cache
+
 how to use it
 ```python
      fcache.FadeInImage.memoryNetwork(
