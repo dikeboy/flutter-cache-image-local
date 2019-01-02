@@ -568,10 +568,11 @@ class MyNetworkImage extends ImageProvider<MyNetworkImage> {
 
   Future<Codec> _loadAsync(MyNetworkImage key) async {
     assert(key == this);
-    if(sdCache==null){
+    print("sdCache");
+    if(sdCache!=null){
       final Uint8List bytes =await  _getFromSdcard(key.url);
       if (bytes!=null&&bytes.lengthInBytes!=null&&bytes.lengthInBytes!= 0) {
-        print("success");
+
         return await PaintingBinding.instance.instantiateImageCodec(bytes);
       }
     }
@@ -583,7 +584,7 @@ class MyNetworkImage extends ImageProvider<MyNetworkImage> {
 
     final Uint8List bytes = await response.bodyBytes;
     print("save =${sdCache}");
-    if(sdCache==null&&bytes.lengthInBytes != 0){
+    if(sdCache!=null&&bytes.lengthInBytes != 0){
         _saveToImage(bytes, key.url);
     }
     if (bytes.lengthInBytes == 0)
