@@ -10,6 +10,7 @@ The code is in fade_in_cache.dart
 
 Copy the FadeInImage  and  NetworkImage, then  add the file cache
 
+## run the pubspec.yaml  Flutter package get
 how to use it
 ```python
      fcache.FadeInImage.memoryNetwork(
